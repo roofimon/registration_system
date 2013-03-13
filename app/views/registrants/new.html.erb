@@ -1,0 +1,37 @@
+<!--form class="form-signin"-->
+<%= form_for @registrant, :html => { :class => 'form-signin'}, :url => { :action => 'create' } do |registrant_form| %>
+    <h2 class="form-signin-heading">Agile Singapore 2013</h2>
+    <h4 class="form-signin-heading">Registration Form</h4>
+    <p class="lead">Attendee Information</p>
+
+    <% if @registrant.errors.any? %>
+        <div id="error_explanation">
+          <div class="alert alert-error">
+            The form contains <%= pluralize(@registrant.errors.count, "error") %>.
+          </div>
+          <ul>
+            <% @registrant.errors.full_messages.each do |msg| %>
+                <li>* <%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <%= registrant_form.text_field :first_name, :placeholder => 'First Name', :class => 'input-block-level' %>
+    <%= registrant_form.text_field :last_name, :placeholder => 'Last Name', :class => 'input-block-level' %>
+    <%= registrant_form.text_field :email, :placeholder => 'your@email.com', :class => 'input-block-level' %>
+    <%= registrant_form.text_field :company, :placeholder => 'Your Company', :class => 'input-block-level' %>
+    <%= registrant_form.text_field :position, :placeholder => 'Your Position', :class => 'input-block-level' %>
+    <%= registrant_form.text_field :phone, :placeholder => 'Your Phone Number', :class => 'input-block-level' %>
+
+    <p class="lead">Registration Billing Contact</p>
+    <label class="checkbox">
+      <input type="checkbox" value="remember-me"> This attendee is also the registration billing contact.
+    </label>
+    <p class="lead">Attendee Communication Preferences</p>
+    <label class="checkbox">
+      <input type="checkbox" value="remember-me"> Send this attendee conference-related emails.
+    </label>
+    <button class="btn btn-large btn-primary" type="submit">Register...</button>
+<% end %>
+<!--/form-->
