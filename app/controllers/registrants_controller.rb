@@ -6,7 +6,7 @@ class RegistrantsController < ApplicationController
   def create
     @registrant = Registrant.new(params[:registrant])
     if @registrant.save
-
+      RegistrantMailer.welcome_mail(@registrant).deliver
     else
       render 'new'
     end
