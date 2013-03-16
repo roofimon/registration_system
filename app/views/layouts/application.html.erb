@@ -7,6 +7,10 @@
   <title><%= content_for?(:title) ? yield(:title) : "RegisterSystem" %></title>
   <%= csrf_meta_tags %>
 
+
+  <%= stylesheet_link_tag "main"%>
+  <%= stylesheet_link_tag "bootstrap.custom"%>
+
   <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
   <!--[if lt IE 9]>
   <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.1/html5shiv.js" type="text/javascript"></script>
@@ -35,11 +39,11 @@
   <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
   <style type="text/css">
       body {
-          padding-top: 40px;
+
           padding-bottom: 40px;
-          background-color: #000000;
-          background-repeat:no-repeat;
-          background-image:url(<%= asset_path 'agile_sg.png' %>);
+          #background-color: #000000;
+          #background-repeat:no-repeat;
+          #background-image:url(<%= asset_path 'agile_sg.png' %>);
       }
 
       .form-signin {
@@ -92,6 +96,18 @@
   </style>
 </head>
 <body>
+
+<nav>
+  <div class="nav-collapse.collapse">
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="/">Agile Singapore 2013</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
 
 <%= bootstrap_flash %>
 <%= yield %>

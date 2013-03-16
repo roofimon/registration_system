@@ -1,0 +1,193 @@
+html {
+    background-image: url("../images/fabric_of_squares_gray.png");
+}
+
+body {
+    background-color: transparent;
+    text-align: center;
+}
+
+@media (min-width: 769px) {
+    .jumbotron {
+        height: 300px;
+        max-width: 1200px;
+        background-image: url("../images/marinabaysands.jpg");
+        background-repeat: no-repeat;
+        background-position: 100% top;
+        margin: 20px auto 20px auto;
+        -moz-box-shadow: 0 0 20px #fff;
+        -webkit-box-shadow: 0 0 20px #fff;
+        box-shadow: 0 0 20px #fff;
+        border: #ddd solid thin;
+        -moz-border-radius: 8px;
+        border-radius: 8px;
+    }
+}
+
+#hero {
+    margin: 6% auto auto;
+    color: #fff;
+    text-shadow: 0px 0px 10px #111;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 2.5em;
+    line-height: 1em;
+    font-family: 'Rock Salt', cursive;
+}
+
+#hero h1 {
+    font-size: 3.5em;
+}
+
+.event_date {
+    font-style: italic;
+    font-family: serif;
+    font-size: 3em;
+    line-height: 1em;
+}
+
+.event_location {
+    font-size: 2em;
+}
+
+.navbar .navbar-inner {
+    background: #eee;
+    background: rgba(178, 178, 178, 0.29);
+    -webkit-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.125) inset;
+    -moz-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.125) inset;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.125) inset;
+}
+
+.navbar-inner .container {
+    max-width: 960px;
+}
+
+.navbar .nav>li>a.btn {
+    padding-top: 7px;
+    color: #eee;
+}
+
+.navbar .nav>li>a.btn:hover {
+    background-color: #d9230f;
+    text-shadow: 1px 1px #555;
+}
+
+.navbar .nav>li>a:hover {
+    text-shadow: 1px 1px #aaa;
+}
+
+#call_for_action {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    color: #333;
+    text-shadow: 0px 1px 5px #fff;
+    margin-bottom: 40px;
+}
+
+section h2 {
+    background-image: url("../images/section_divider.png");
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgba(0, 0, 0, 0);
+    background-position: center;
+    font-size: 1.3em;
+    font-weight: 400;
+    margin: 60px auto;
+    font-family: "Rock Salt", cursive;
+}
+
+ul {
+    margin-left: 0;
+}
+
+section li {
+    display: inline;
+    list-style-type: none;
+    padding-right: 2em;
+}
+
+footer {
+    background: #ddd;
+    background: rgba(42, 42, 42, 0.4);
+    margin: 40px 0 0;
+    padding: 40px;
+    color: #eee;
+    border-top: 1px solid rgb(223, 223, 223);
+    -webkit-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.125) inset;
+    -moz-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.125) inset;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.125) inset;
+}
+
+footer a {
+    color: #fff;
+}
+
+#secondary_nav a {
+    font-size: 1.2em;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: #eee;
+    text-shadow: 1px 1px #555;
+}
+
+#secondary_nav {
+    margin-bottom: 40px;
+}
+
+.featured_speaker_profile_photo_container {
+    -webkit-box-shadow: 0px 0px 10px #eee;
+    -moz-box-shadow:  0px 0px 10px #eee;
+    box-shadow:  0px 0px 10px #eee;
+    height: 200px;
+    width: 200px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.photo_inset_shadow {
+    border: 1px solid #fff;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8) inset;
+    -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8) inset;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8) inset;
+}
+
+.featured_speaker_profile_photo_container img {
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    z-index: -2;
+    position: relative;
+}
+
+#featured_speakers h3 {
+    font-size: 1em;
+    text-shadow: rgb(254, 254, 254) 0px 1px 0px;
+}
+
+#featured_speakers .span3 {
+    min-width: 200px;
+}
+
+.featured_speakers_profiles {
+    margin-bottom: 40px;
+}
+
+.page_description {
+    margin-top: 40px;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+
+
+
+
+
+
+
