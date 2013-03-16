@@ -1,5 +1,5 @@
 class RegistrantMailer < ActionMailer::Base
-  default from: 'roofimon@gmail.com'
+  default from: 'registration@agilesingapore.org'
 
   def welcome_mail(registrant)
     @registrant = registrant
