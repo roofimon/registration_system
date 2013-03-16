@@ -35,15 +35,14 @@
   <%= favicon_link_tag 'images/apple-touch-icon-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png' %>
 
   <!-- For all other devices -->
-  <!-- Size should be 32 x 32 pixels -->
+  <!-- Size should be 32 x 32 pixels           #background-image:url(<%= asset_path 'agile_sg.png' %>);-->
   <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
   <style type="text/css">
       body {
 
           padding-bottom: 40px;
-          #background-color: #000000;
-          #background-repeat:no-repeat;
-          #background-image:url(<%= asset_path 'agile_sg.png' %>);
+
+
       }
 
       .form-signin {
