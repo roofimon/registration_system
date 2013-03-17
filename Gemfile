@@ -5,6 +5,9 @@ gem 'jquery-rails', '2.0.2'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 gem 'twitter-bootstrap-rails', '~> 2.2.6'
+gem "rvm-capistrano", "~> 1.2.7"
+gem 'multi_json'
+
 
 group :development, :test do
   gem 'sqlite3', '1.3.5'
