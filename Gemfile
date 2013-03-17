@@ -7,6 +7,9 @@ gem 'jquery-rails', '2.0.2'
 gem 'twitter-bootstrap-rails', '~> 2.2.6'
 gem "rvm-capistrano", "~> 1.2.7"
 gem 'multi_json'
+gem 'execjs'
+
+gem 'therubyracer'
 
 
 group :development, :test do
@@ -32,6 +35,7 @@ group :test do
   gem 'factory_girl_rails', '4.1.0'
 end
 
-group :production do
-  gem 'pg', '0.12.2'
-end
+#group :production do
+#  gem 'pg', '0.12.2'
+#end
+
