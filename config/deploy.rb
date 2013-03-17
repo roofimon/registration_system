@@ -3,7 +3,7 @@ set :password, "I,jvogiH;lN0y'"
 set :user_sudo, true
 set :application, 'registration_system'
 set :repository,  'git@github.com:roofimon/registration_system.git'
-
+set :deploy_to, "/home/deploy/#{application}"
 default_run_options[:pty] = true
 
 
