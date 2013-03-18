@@ -2,10 +2,8 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.12'
 gem 'jquery-rails', '2.0.2'
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
 gem 'twitter-bootstrap-rails', '~> 2.2.6'
-gem "rvm-capistrano", "~> 1.2.7"
+gem 'rvm-capistrano', '~> 1.2.7'
 gem 'multi_json'
 gem 'execjs'
 gem 'client_side_validations'
@@ -35,6 +33,7 @@ group :test do
   gem 'factory_girl_rails', '4.1.0'
 end
 
+#In case, to deploy on Heroku
 #group :production do
 #  gem 'pg', '0.12.2'
 #end
