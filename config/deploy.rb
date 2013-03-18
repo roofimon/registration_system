@@ -1,31 +1,28 @@
-set :user, 'roofimon'
-set :password, "password"
+require 'rvm/capistrano'
+
+set :user, 'ubuntu'
+set :password, "I,jvogiH;lN0y'"
 set :user_sudo, true
 set :application, 'registration_system'
 set :repository,  'git@github.com:roofimon/registration_system.git'
-set :deploy_to, "/home/roofimon/#{application}"
+set :deploy_to, "/home/ubuntu/cap/#{application}"
 default_run_options[:pty] = true
-
-
-require "rvm/capistrano"
-
-
+ssh_options[:keys] = %w(/home/roofimon/.ssh/id_rsa)
+set :ssh_options, { :forward_agent => true }
 
 # set :scm, :git # You can set :scm explicitly or Capistrano will make an intelligent guess based on known version control directory names
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 
-role :web, '192.168.2.33'#'119.59.97.9'                          # Your HTTP server, Apache/etc
-role :app, '192.168.2.33'#'119.59.97.9'                          # This may be the same as your `Web` server
-role :db,  '192.168.2.33'#'119.59.97.9', :primary => true # This is where Rails migrations will run
-role :db,  '192.168.2.33'#'119.59.97.9'
+role :web, '119.59.97.9'                          # Your HTTP server, Apache/etc
+role :app, '119.59.97.9'                          # This may be the same as your `Web` server
+role :db,  '119.59.97.9', :primary => true        # This is where Rails migrations will run
+role :db,  '119.59.97.9'
 
 # if you want to clean up old releases on each deploy uncomment this:
 # after "deploy:restart", "deploy:cleanup"
 set :scm, 'git'
 set :scm_user, 'roofimon@gmail.com'
 set :scm_passphrase, "I,jvogiH;lN0y'"
-set :ssh_options, { :forward_agent => true }
-ssh_options[:keys] = %w(/home/roofimon/.ssh/id_rsa)
 set :branch, 'master'
 set :git_shallow_clone, 1
 set :scm_verbose, true
