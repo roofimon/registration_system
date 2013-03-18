@@ -10,8 +10,6 @@ default_run_options[:pty] = true
 ssh_options[:keys] = %w(/home/roofimon/.ssh/id_rsa)
 set :ssh_options, { :forward_agent => true }
 
-# set :scm, :git # You can set :scm explicitly or Capistrano will make an intelligent guess based on known version control directory names
-# Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 
 role :web, '119.59.97.9'                          # Your HTTP server, Apache/etc
 role :app, '119.59.97.9'                          # This may be the same as your `Web` server

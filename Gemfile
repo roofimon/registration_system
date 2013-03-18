@@ -8,6 +8,7 @@ gem 'multi_json'
 gem 'execjs'
 gem 'client_side_validations'
 gem 'therubyracer'
+gem 'mysql2', '>= 0.3.11'
 
 
 group :development, :test do
