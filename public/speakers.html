@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
-  <title>Agile Singapore 2013</title>
+  <title>Agile Singapore 2013: Featured Speakers</title>
   <link href="stylesheets/bootstrap.custom.min.css" rel="stylesheet" type="text/css">
   <link href="stylesheets/bootstrap-responsive.css" rel="stylesheet" type="text/css">
   <link href="stylesheets/main.css" rel="stylesheet" type="text/css">
@@ -17,8 +17,8 @@
           <li>
             <a href="program.html">Program</a>
           </li>
-          <li>
-            <a href="speakers.html">Speakers</a>
+          <li class="active">
+            <a>Speakers</a>
           </li>
           <li>
             <a href="destination.html">Destination</a>
@@ -33,37 +33,28 @@
             <a class="btn btn-primary" href="#">Register</a>
           </li>
         </ul>
+        </ul>
       </div>
     </div>
   </div>
 </nav>
 
-<header class="jumbotron">
-  <div id="hero">
-    <h1>Agile Singapore</h1>
-
-    <p class="event_date">November 7-8, 2013</p>
-
-    <p class="event_location">Marina Bay Sands</p>
-  </div>
-</header>
-
 <div class="container">
-  <section id="call_for_action">
+
+  <h1>Featured Speakers</h1>
+
+  <section class="page_description">
     <p>
-      Set in the majestic Marina Bay Sands in Singapore. Come and be part of the first ever Agile Singapore
-      conference. Join us for an intense two days of learning, interaction, and networking with the world's modern
-      and progressive thinkers in Software Engineering and Product Development, along with Agile practitioners in
-      Southeast Asia.
+      The organizers of Agile Singapore 2013 have handpicked familiar movers and shakers of the
+      software industry to explore ideas with people in Southeast Asia. Listen and interact with
+      them as they share their thoughts and experiences.
     </p>
-    <a class="btn btn-primary btn-large" href="#">Register Now!</a>
   </section>
 
-  <section id="featured_speakers">
-    <h2>Speakers</h2>
-
-    <div class="row featured_speakers_profiles">
-      <div class="span3">
+  <section id="speaker_list">
+    <div class="simple_divider">&nbsp;</div>
+    <div class="row single_profile">
+      <div class="span4">
         <div class="featured_speaker_profile_photo_container">
           <div class="photo_inset_shadow">
             <img src="images/speakers/stuart_turner.jpg" width="200" height="200"/>
@@ -71,7 +62,33 @@
         </div>
         <h3>Stuart Turner</h3>
       </div>
-      <div class="span3">
+      <div class="span8">
+        <p>
+          Stuart provides consulting and coaching services to individuals, teams and organisations
+          wanting to continually learn and improve. He is dedicated to helping people be happy and
+          has worked for startups and Global 100 companies in the UK before moving to Singapore in
+          2011. He has been writing and delivering software for over 20 years on products for
+          low-latency financial investment trading, financial modelling, operational risk and 3D
+          computer aided modelling.
+        </p>
+      </div>
+    </div>
+    <div class="simple_divider">&nbsp;</div>
+    <div class="row single_profile">
+      <div class="span8">
+        <p>
+          Stanly Lau is an Agile Coach in Odd-e. He previously worked as a developer and manager.
+          He lives in an environment where IT is seen undervalued and "the only way a developer
+          can progress is to become a manager". This could be a reason way many people switch out
+          of IT and he nearly got influenced by that. Instead, he searched for better ways on
+          software development and that leads him to Agile. From then on, he enjoys helping others
+          to produce better quality software in a sustainable way.
+          He is particularly interested in engineering practices like Continuous Integration,
+          Test Driven Development and Refactoring. He is also focusing on Scrum and yearns to improve
+          his facilitation skills so that it helps people effectively.
+        </p>
+      </div>
+      <div class="span4">
         <div class="featured_speaker_profile_photo_container">
           <div class="photo_inset_shadow">
             <img src="images/speakers/stanly_lau.jpg" width="200" height="200"/>
@@ -79,7 +96,10 @@
         </div>
         <h3>Stanly Lau</h3>
       </div>
-      <div class="span3">
+    </div>
+    <div class="simple_divider">&nbsp;</div>
+    <div class="row single_profile">
+      <div class="span4">
         <div class="featured_speaker_profile_photo_container">
           <div class="photo_inset_shadow">
             <img src="images/speakers/bas_vodde.jpg" width="200" height="200"/>
@@ -87,20 +107,21 @@
         </div>
         <h3>Bas Vodde</h3>
       </div>
-      <div class="span3">
-        <div class="featured_speaker_profile_photo_container">
-          <div class="photo_inset_shadow">
-            <img src="images/speakers/twin_panichsombat.jpg" width="200" height="200"/>
-          </div>
-        </div>
-        <h3>Roof Panichsombat</h3>
+      <div class="span8">
+        <p>
+          Bas Vodde is an experienced coach in agile methods and especially Scrum. He's also a
+          Certified Scrum master trainer. Next to Scrum, he trains and coaches teams in TDD,
+          retrospective and agile planning. He is originally from Holland, however has lived in
+          China, Finland and is currently living in Singapore. In the 90s he worked as a developer
+          in Holland and felt a mismatch between what he experienced as working and between "what
+          the official literature said you should do". That was solved with the introduction of
+          Extreme Programming and evenmore so, with Agile Development in general.
+        </p>
       </div>
     </div>
-
-    <a class="btn btn-primary btn-large" href="speakers.html">View All Speakers</a>
   </section>
 
-  <section id="sponsors">
+  <section id="sponsors_column">
     <h2>Sponsored by</h2>
     <ul class="sponsor_logos">
       <li><a href="http://odd-e.com"><img src="images/sponsors/odd-e.png" alt="Odd-e"/></a></li>
@@ -144,7 +165,7 @@
   </footer>
 </section>
 
-<script type="text/javascript" src="javascripts/jquery-1.9.1.min.js"></script>
-<script type="text/javascript" src="javascripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
 </html>

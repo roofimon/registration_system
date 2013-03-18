@@ -1,5 +1,5 @@
 <!--form class="form-signin"-->
-<%= form_for @registrant, :html => { :class => 'form-signin'}, :url => { :action => 'create' } do |registrant_form| %>
+<%= form_for @registrant, :validate => true, :html => { :class => 'form-signin'}, :url => { :action => 'create' } do |registrant_form| %>
     <h2 class="form-signin-heading"></h2>
     <h2 class="brand">Registration Form</h2>
     <p class="lead">Attendee Information</p>
@@ -17,7 +17,7 @@
         </div>
     <% end %>
 
-    <%= registrant_form.text_field :first_name, :placeholder => 'First Name', :class => 'input-block-level' %>
+    <%= registrant_form.text_field :first_name, :placeholder => 'First Name', :class => 'input-block-level', :validate => { :presence => true } %>
     <%= registrant_form.text_field :last_name, :placeholder => 'Last Name', :class => 'input-block-level' %>
     <%= registrant_form.text_field :email, :placeholder => 'your@email.com', :class => 'input-block-level' %>
     <%= registrant_form.text_field :company, :placeholder => 'Your Company', :class => 'input-block-level' %>
@@ -33,5 +33,7 @@
       <input type="checkbox" value="remember-me"> Send this attendee conference-related emails.
     </label>
     <button class="btn btn-danger" type="submit">Register...</button>
+
+    <%= yield(:user_validators) %>
 <% end %>
 <!--/form-->

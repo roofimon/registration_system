@@ -8,7 +8,7 @@ gem 'twitter-bootstrap-rails', '~> 2.2.6'
 gem "rvm-capistrano", "~> 1.2.7"
 gem 'multi_json'
 gem 'execjs'
-
+gem 'client_side_validations'
 gem 'therubyracer'
 
 

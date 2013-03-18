@@ -7,6 +7,10 @@ body {
     text-align: center;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 @media (min-width: 769px) {
     .jumbotron {
         height: 300px;
@@ -82,7 +86,7 @@ h1 {
     font-size: 1.5em;
     line-height: 1.5em;
     color: #333;
-    text-shadow: 0px 1px 5px #fff;
+    text-shadow: rgb(254, 254, 254) 0px 1px 0px;
     margin-bottom: 40px;
 }
 
@@ -108,7 +112,11 @@ section li {
     padding-right: 2em;
 }
 
-footer {
+.page_description p {
+    margin-top: 40px;
+}
+
+.footer {
     background: #ddd;
     background: rgba(42, 42, 42, 0.4);
     margin: 40px 0 0;
@@ -126,9 +134,10 @@ footer a {
 
 #secondary_nav a {
     font-size: 1.2em;
+    color: #fff;
 }
 
-footer a:hover {
+#secondary_nav a:hover {
     text-decoration: none;
     color: #eee;
     text-shadow: 1px 1px #555;
@@ -138,12 +147,20 @@ footer a:hover {
     margin-bottom: 40px;
 }
 
-.featured_speaker_profile_photo_container {
+.featured_speaker_profile_photo_container, .organizer_photo_container {
+    height: 200px;
+    width: 200px;
+}
+
+.destination_photo_container {
+    height: 200px;
+    width: 500px;
+}
+
+.featured_speaker_profile_photo_container, .destination_photo_container, .organizer_photo_container {
     -webkit-box-shadow: 0px 0px 10px #eee;
     -moz-box-shadow:  0px 0px 10px #eee;
     box-shadow:  0px 0px 10px #eee;
-    height: 200px;
-    width: 200px;
     -moz-border-radius: 10px;
     border-radius: 10px;
     margin: auto;
@@ -158,14 +175,14 @@ footer a:hover {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8) inset;
 }
 
-.featured_speaker_profile_photo_container img {
+.featured_speaker_profile_photo_container img, .destination_photo_container img, .organizer_photo_container img {
     -moz-border-radius: 10px;
     border-radius: 10px;
     z-index: -2;
     position: relative;
 }
 
-#featured_speakers h3 {
+.featured_speakers_profiles h3 {
     font-size: 1em;
     text-shadow: rgb(254, 254, 254) 0px 1px 0px;
 }
@@ -174,17 +191,40 @@ footer a:hover {
     min-width: 200px;
 }
 
-.featured_speakers_profiles {
-    margin-bottom: 40px;
-}
-
 .page_description {
     margin-top: 40px;
     font-size: 1.5em;
     line-height: 1.5em;
 }
 
+.single_profile {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
 
+.single_profile h3 {
+    font-size: 1.2em;
+    text-shadow: rgb(254, 254, 254) 0px 1px 0px;
+}
+
+.single_profile h3 a {
+    color: #333;
+}
+
+.single_profile h3 a:hover {
+    color: #d9230f;
+}
+
+.simple_divider {
+    background-image: url(../images/divider.png);
+    width: 502px;
+    height: 35px;
+    margin: 20px auto;
+}
+
+.footnote {
+    font-size: 0.8em;
+}
 
 
 
