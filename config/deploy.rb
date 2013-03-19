@@ -4,10 +4,11 @@ set :user, 'ubuntu'
 set :password, "I,jvogiH;lN0y'"
 set :user_sudo, true
 set :application, 'registration_system'
-set :repository,  'git@github.com:roofimon/registration_system.git'
+#set :repository,  'git@github.com:roofimon/registration_system.git'
+set :repository, 'git@git.odd-e.com:~roof/agile-singapore/roofs-agile-singapore-2013.git'
 set :deploy_to, "/home/ubuntu/cap/#{application}"
 default_run_options[:pty] = true
-ssh_options[:keys] = %w(/home/roofimon/.ssh/id_rsa)
+ssh_options[:keys] = %w(/home/roofimon/.ssh/id_rsa_odd-e)
 set :ssh_options, { :forward_agent => true }
 
 
